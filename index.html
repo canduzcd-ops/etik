@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>ETİK - Etik Karar Danışmanı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ios-blur: blur(20px);
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            background-color: #f2f2f7; /* iOS System Background */
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.02em;
+        }
+        .glass-dock {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: var(--ios-blur);
+            -webkit-backdrop-filter: var(--ios-blur);
+        }
+        .safe-bottom {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        .safe-top {
+            padding-top: env(safe-area-inset-top);
+        }
+        /* Smooth transitions */
+        .page-transition {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* iOS-like Squircle corners */
+        .squircle {
+            border-radius: 40px;
+        }
+        .squircle-sm {
+            border-radius: 24px;
+        }
+    </style>
+
+</head>
+<body class="transition-colors duration-500">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
